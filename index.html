@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#home" class="nav__logo">Howard (Hou Kin) Wan</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#timeline" class="nav__link">Timeline</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I’m <span class="home__title-color">Howard</span><br> Computational Data Science</h1>
+
+                    <a href="mailto:houkinw@cs.cmu.edu" class="button">Email Me</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <circle cx="240" cy="234" r="220"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <circle cx="240" cy="234" r="220"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I’m Howard</h2>
+                        <p class="about__text">CMU MCDS student and software/ML engineer focused on scalable ML systems, HPC, and LLM serving. Previously at SDSC, Compex Systems Singapore, and NXP, I’ve built distributed training/orchestration on SLURM/K8s, production RAG systems, and deployed models on AWS and Azure.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== TIMELINE =====-->
+            <section class="timeline section" id="timeline">
+                <h2 class="section-title">Education & Experience</h2>
+                
+                <div class="timeline__container">
+                    <!-- Timeline Line -->
+                    <div class="timeline__line">
+                        <div class="timeline__line-fill"></div>
+                    </div>
+                    
+                    <!-- Education Timeline -->
+                    <div class="timeline__section">
+                        <h3 class="timeline__section-title">Education</h3>
+                        
+                        <div class="timeline__item" data-aos="fade-up">
+                            <div class="timeline__dot timeline__dot--education"></div>
+                            <div class="timeline__content">
+                                <div class="timeline__date">2025 - 2027</div>
+                                <h4 class="timeline__title">Carnegie Mellon University</h4>
+                                <p class="timeline__subtitle">School of Computer Science</p>
+                                <p class="timeline__degree">Master of Science in Computational Data Science</p>
+                                <p class="timeline__location">Pittsburgh, PA</p>
+                            </div>
+                            <div class="timeline__image">
+                                <img src="assets/img/work1.jpg" alt="CMU" class="timeline__img">
+                            </div>
+                        </div>
+                        
+                        <div class="timeline__item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline__dot timeline__dot--education"></div>
+                            <div class="timeline__content">
+                                <div class="timeline__date">2021 - 2025</div>
+                                <h4 class="timeline__title">University of California, San Diego</h4>
+                                <p class="timeline__subtitle">Halıcıoğlu Data Science Institute</p>
+                                <p class="timeline__degree">Bachelor of Science in Data Science</p>
+                                <p class="timeline__location">San Diego, CA</p>
+                            </div>
+                            <div class="timeline__image">
+                                <img src="assets/img/work2.jpg" alt="UCSD" class="timeline__img">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience Timeline -->
+                    <div class="timeline__section">
+                        <h3 class="timeline__section-title">Experience</h3>
+                        
+                        <div class="timeline__item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="timeline__dot timeline__dot--experience"></div>
+                            <div class="timeline__content">
+                                <div class="timeline__date">June 2024 - Present</div>
+                                <h4 class="timeline__title">San Diego Supercomputer Center</h4>
+                                <p class="timeline__subtitle">Software Engineer Intern - Cyberinfrastructure Enabled ML</p>
+                                <p class="timeline__location">San Diego, CA</p>
+                                <ul class="timeline__bullets">
+                                    <li>Developed bash and SLURM scripts to orchestrate distributed workloads for PyTorch, Spark, and Dask</li>
+                                    <li>Automated YAML generation for K8s deployments for dynamic resource allocation based on resource usage</li>
+                                    <li>Developed a pipeline for Docker to Singularity container conversion for CUDA dependent workloads</li>
+                                    <li>Deployed GraphRAG on a HPC cluster, configured scalable API endpoints to handle 100,000s of LLM requests</li>
+                                </ul>
+                            </div>
+                            <div class="timeline__image">
+                                <img src="assets/img/work3.jpg" alt="SDSC" class="timeline__img">
+                            </div>
+                        </div>
+                        
+                        <div class="timeline__item" data-aos="fade-up" data-aos-delay="600">
+                            <div class="timeline__dot timeline__dot--experience"></div>
+                            <div class="timeline__content">
+                                <div class="timeline__date">June 2023 - September 2023</div>
+                                <h4 class="timeline__title">Compex Systems Singapore</h4>
+                                <p class="timeline__subtitle">Software Engineer Intern - LLM Innovation</p>
+                                <p class="timeline__location">Singapore</p>
+                                <ul class="timeline__bullets">
+                                    <li>Implemented an internal RAG for support troubleshooting, adopted by 80% of support staff</li>
+                                    <li>Setup schema design and management of PostgreSQL vector store with on-demand ETL injection of new data</li>
+                                    <li>Served LLMs on Azure OpenAI with secure access controls and best practices for managing secrets/keys</li>
+                                    <li>Fine-tuned recommendation systems on Salesforce ticketing resulting in 2 hours saved per data-sheet search</li>
+                                </ul>
+                            </div>
+                            <div class="timeline__image">
+                                <img src="assets/img/work4.jpg" alt="Compex Systems" class="timeline__img">
+                            </div>
+                        </div>
+                        
+                        <div class="timeline__item" data-aos="fade-up" data-aos-delay="800">
+                            <div class="timeline__dot timeline__dot--experience"></div>
+                            <div class="timeline__content">
+                                <div class="timeline__date">June 2022 - September 2022</div>
+                                <h4 class="timeline__title">NXP Semiconductors</h4>
+                                <p class="timeline__subtitle">Machine Learning Engineer Intern - Power Reduction</p>
+                                <p class="timeline__location">San Diego, CA</p>
+                                <ul class="timeline__bullets">
+                                    <li>Deployed machine learning models on AWS Sagemaker and leveraged S3 for data retrieval and storage</li>
+                                    <li>Utilized supervised learning techniques and unsupervised dimensionality reduction with scikit-learn and TensorFlow</li>
+                                    <li>Developed an ETL pipeline to read and store data logs, increasing data collection speeds by 30%</li>
+                                    <li>Facilitated efficient job distribution and simulations on Ansys PowerArtist and IBM LSF with shell/SLURM scripts</li>
+                                </ul>
+                            </div>
+                            <div class="timeline__image">
+                                <img src="assets/img/work5.jpg" alt="NXP" class="timeline__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">JavaScript</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">PyTorch</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">AWS</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PROJECTS =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="#" class="work__img" title="Amazon Dataset Analysis">
+                        <div class="work__overlay">
+                            <h3>Amazon Dataset Analysis</h3>
+                            <p>Configured 5 AWS EC2 instances in parallel for EDA and ML on 80 million rows of data</p>
+                        </div>
+                        <img src="assets/img/work1.jpg" alt="Amazon Dataset Project">
+                    </a>
+                    <a href="#" class="work__img" title="Military Expenditure Analysis">
+                        <div class="work__overlay">
+                            <h3>Allied Networks & Military Expenditure</h3>
+                            <p>Data visualizations for comprehensive analysis of military expenditure and allied connections of 200+ nations using D3.js</p>
+                        </div>
+                        <img src="assets/img/work2.jpg" alt="Military Analysis Project">
+                    </a>
+                    <a href="#" class="work__img" title="IoT Ring Doorbell">
+                        <div class="work__overlay">
+                            <h3>IoT Ring Doorbell</h3>
+                            <p>Used Keras3 to train CNNs pre-trained on MobileNet to detect and create bounding boxes around humans, utilizing TFLite for edge computing on Raspberry Pi</p>
+                        </div>
+                        <img src="assets/img/work3.jpg" alt="IoT Project">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="houkinw@cs.cmu.edu" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Howard (Hou Kin) Wan</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
