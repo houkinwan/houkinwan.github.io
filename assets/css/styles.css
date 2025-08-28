@@ -247,7 +247,7 @@ img {
 }
 
 .home__blob-img {
-  width: 360px;
+  width: 460px; /* Reduced from 540px by 0.8x */
 }
 
 /*BUTTONS*/
@@ -530,6 +530,7 @@ img {
 .timeline {
   background: linear-gradient(135deg, var(--light-bg) 0%, #fff 100%);
   position: relative;
+  overflow: hidden;
 }
 
 .timeline__container {
@@ -559,13 +560,14 @@ img {
   height: 0;
   background: linear-gradient(to bottom, var(--accent-color), var(--first-color));
   border-radius: 2px;
-  animation: timeline-fill 3s ease-out forwards;
-  animation-delay: 1s;
+  transition: height 0.4s ease-out;
 }
 
-@keyframes timeline-fill {
-  to { height: 100%; }
+.timeline__line-fill.revealed {
+  height: 100%;
 }
+
+/* Timeline line fill animation removed - now handled by ScrollReveal */
 
 .timeline__section {
   margin-bottom: 4rem;
@@ -606,9 +608,13 @@ img {
 .timeline__item {
   position: relative;
   margin-bottom: 3rem;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: timeline-fade-in 0.8s ease-out forwards;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.timeline__item:hover {
+  transform: translateY(-5px);
 }
 
 .timeline__item:nth-child(odd) {
@@ -621,12 +627,7 @@ img {
   text-align: left;
 }
 
-@keyframes timeline-fade-in {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* Timeline fade-in animation removed - now handled by ScrollReveal */
 
 .timeline__dot {
   position: absolute;
@@ -640,6 +641,12 @@ img {
   box-shadow: 0 0 0 4px var(--first-color);
   z-index: 2;
   background: #fff;
+  transition: all 0.3s ease;
+}
+
+.timeline__item:hover .timeline__dot {
+  transform: translateX(-50%) scale(1.2);
+  box-shadow: 0 0 0 6px var(--first-color);
 }
 
 .timeline__dot--education {
